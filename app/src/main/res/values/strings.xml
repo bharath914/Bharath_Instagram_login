@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Bharath_Instagram</string>
+    <string name="top_header">English(US)</string>
+    <string name="from">from</string>
+    <string name="meta">meta</string>
+    <string name="instagram_logo">Instagram Logo</string>
+    <string name="log_in">Log in</string>
+    <string name="forgot_password">Forgot password?</string>
+    <string name="create_new_account">Create New Account</string>
+</resources>

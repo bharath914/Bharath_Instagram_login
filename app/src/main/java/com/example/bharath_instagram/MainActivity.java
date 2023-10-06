@@ -116,6 +116,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+
     private boolean checkpass(String pass) {
         if (password.length() < 8) {
             msg = "Password should be at least 8 characters long.";
@@ -177,6 +178,11 @@ public class MainActivity extends AppCompatActivity {
         }
 
         return true; // Username passed all checks
+    }
+
+    @Override
+    public void onBackPressed() {
+        finishAffinity();
     }
 
     public boolean validateUsrname(String str) {

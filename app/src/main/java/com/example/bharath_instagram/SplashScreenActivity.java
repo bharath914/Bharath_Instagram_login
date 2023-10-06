@@ -40,6 +40,7 @@ public class SplashScreenActivity extends AppCompatActivity {
 
                 // Start the activity using the Intent
                 startActivity(intent);
+
             }
         }, delayMillis);
     }

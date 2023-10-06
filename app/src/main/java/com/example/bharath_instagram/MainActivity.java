@@ -4,7 +4,6 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
 import android.widget.ImageView;
@@ -65,7 +64,6 @@ public class MainActivity extends AppCompatActivity {
         login = findViewById(R.id.Btn_Login);
 
 
-
         SharedPreferences sharedPreferences = getSharedPreferences("Insta", MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPreferences.edit();
 
@@ -78,17 +76,14 @@ public class MainActivity extends AppCompatActivity {
                 showALert("Invalid Username/Password", "Enter your correct credentials");
             } else if (!checkpass(password.getText().toString())) {
                 showALert(incorrectPass, msg);
-            } else if (!validatePass(password.getText().toString())) {
-                showALert(incorrectPass, "Incorrect Password");
-            } else if (isValidInstagramUsername(username.getText().toString())
+            }  else if (isValidInstagramUsername(username.getText().toString())
                     && validateUsrname(username.getText().toString())
                     && checkpass(password.getText().toString())
-                    && validatePass(password.getText().toString())
+
             ) {
                 startProfile();
-                editor.putBoolean("User",true);
+                editor.putBoolean("User", true);
                 editor.apply();
-
 
 
             }
